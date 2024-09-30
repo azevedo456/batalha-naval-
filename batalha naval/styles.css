@@ -1,0 +1,60 @@
+body {
+    background-image: url(barco\ de\ fundo.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#matriz {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 5px;
+    margin: 20px;
+}
+
+.campo {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    background-image: url(agua.jfif); /* Mantém a imagem da água */
+    background-size: cover; /* Faz a imagem cobrir todo o campo */
+}
+
+.acertou {
+    background-image: url(barco.jfif); /* Imagem do barco ao acertar */
+    background-size: cover; /* Faz a imagem cobrir todo o campo */
+}
+
+.errou {
+    background-image: url(splash.jfif); /* Imagem de splash ao errar */
+    background-size: cover; /* Faz a imagem cobrir todo o campo */
+    background-color: red; /* Cor de fundo ao errar */
+}
+
+#controle {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: grey;
+}
